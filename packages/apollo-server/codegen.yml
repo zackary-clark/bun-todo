@@ -1,0 +1,11 @@
+schema: './schema/**/*.graphql'
+generates:
+  ./generated/schema.ts:
+    config:
+      useIndexSignature: true
+      strictScalars: true
+      scalars:
+        Date: '../src/scalarTypes#DateScalar'
+    plugins:
+      - typescript
+      - typescript-resolvers

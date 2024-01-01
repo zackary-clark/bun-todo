@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "composite": true,
+        "downlevelIteration": true,
+        "forceConsistentCasingInFileNames": true,
+        "jsx": "react",
+        "lib": [
+            "ESNext"
+        ],
+        "module": "esnext",
+        "moduleDetection": "force",
+        "moduleResolution": "bundler",
+        "noEmit": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "esnext",
+        "types": [
+            "bun-types"
+        ],
+        "useUnknownInCatchVariables": true
+    }
+}

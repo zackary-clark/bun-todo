@@ -1,0 +1,8 @@
+extend type Query {
+    todos: [Todo]!
+}
+
+type Todo {
+    name: String!
+    isDone: Boolean!
+}

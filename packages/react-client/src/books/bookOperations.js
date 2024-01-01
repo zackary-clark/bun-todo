@@ -1,7 +1,9 @@
-import { gql, useSuspenseQuery } from "@apollo/client";
+import { gql, useQuery } from "@apollo/client";
 
 export function useBooksQuery() {
-    return useSuspenseQuery(gql`
+    // TODO: Suspense was causing issues when hot reloading, because it wasn't actually being used?
+    // return useSuspenseQuery(gql`
+    return useQuery(gql`
         query Books {
             books {
                 title

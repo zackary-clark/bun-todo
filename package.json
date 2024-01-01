@@ -3,8 +3,15 @@
     "license": "GPL-3.0-only",
     "version": "0.0.1",
     "private": true,
-    "workspaces": ["packages/*"],
-    "devDependencies": {},
+    "devDependencies": {
+        "@graphql-codegen/cli": "^5.0.0",
+        "@graphql-codegen/typescript": "^4.0.1",
+        "@types/bun": "^1.0.0",
+        "typescript": "^5.3.3"
+    },
     "peerDependencies": {},
-    "dependencies": {}
+    "dependencies": {
+        "date-fns": "^3.0.6",
+        "graphql": "^16.8.1"
+    }
 }

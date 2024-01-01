@@ -1,12 +1,16 @@
 {
     "name": "bun-todo-server",
-    "module": "index.js",
+    "module": "index.ts",
     "type": "module",
+    "scripts": {
+        "predev": "bun run gen",
+        "dev": "bun run --hot index.ts",
+        "gen": "graphql-codegen"
+    },
     "devDependencies": {
-        "bun-types": "latest"
+        "@graphql-codegen/typescript-resolvers": "^4.0.1"
     },
     "dependencies": {
-        "@apollo/server": "^4.9.5",
-        "graphql": "^16.8.1"
+        "@apollo/server": "^4.9.5"
     }
 }
